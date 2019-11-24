@@ -1,0 +1,203 @@
+/*
+    此页为index.html 页面的层叠样式表
+    作者：方祥
+    修改时间;2019.11.15
+*/
+/*取消默认样式*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(7,6,6,0.81);
+}
+hr{
+    color: white;
+}
+.main{
+    width: auto;
+    height: 100px;
+    border: red;
+}
+video{
+    width: 100%;
+    margin-top: 20px;
+}
+h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    left: 110px;
+ }
+.seach_box{
+    display: inline;
+}
+.seach{
+    width: 15%;
+    height: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 200px;
+    border-radius:5px;
+}
+.btn{
+    height: 30px;
+    width: 40px;
+    position: relative;
+    left: 160px;
+    background-color: slategray;
+    border-radius: 16%;
+}
+/*头部*/
+.head{
+    height: auto;
+	/*颜色渐变*/
+	/*background-image: linear-gradient(black, #ffffff ,black);*/
+}
+.head_title{
+    /*background-image: linear-gradient(black,slategray,black);*/
+    color: #fff;
+    background-color: rgba(7,6,6,0.9);
+}
+.head_menu{
+    height: 30px;
+    width: 100%;
+    background-color: black;
+}
+.head_menu a{
+    margin-top: 5px;
+    float: right;
+    margin-right: 20px;
+    color: #fff;
+}
+.sug{
+    width: 50px;
+    display: inline;
+    text-align: right;
+}
+.head_menu .popbox{
+    display: none;
+}
+.sug a{
+    position: relative;
+}
+.sug:hover .popbox{
+    display: block;
+    position: absolute;
+    top: 30px;
+}
+/*左边部分*/
+.left{
+    width: 20%;
+    height: auto;
+    float: left;
+
+}
+p{
+    background-color: rgba(7,6,6,0.81);
+    color: #ffffff;
+}
+.left ul{
+    text-align: center;
+    list-style: none;
+}
+.left ul li{
+    height: 35%;
+    background-color: rgba(7,6,6,0.81);
+    border-bottom: 1px solid black;
+	border-right: 1px solid black;
+    padding-top: 18px;
+    padding-bottom: 12px;
+}
+.left_menu li a{
+    color: #ffffff;
+}
+/*左侧li标签鼠标悬浮事件*/
+.left ul li:hover{
+    font-size: 18px;
+    /*background-image: linear-gradient(#00e3ff, #d7fcff ,#00e3ff);*/
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.left .daohang{
+    border-bottom: 3px solid black;
+    width: 100%;
+    font-weight: bold;
+    font-size: 21px;
+    text-align:center;
+    padding: 20px;
+    padding-left: 0;
+}
+.info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: slategray;
+}
+.info p{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.info a{
+    color: cornflowerblue;
+}
+.right{
+    width: 20%;
+    height: auto;
+    float: left;
+   
+}
+/*中间部分*/
+.center{
+    width: 80%;
+    height: auto;
+    float: left;
+}
+.trans_pics .te{
+    margin-top: 20px;
+}
+.loop_pic{
+     height: 400px;
+     width: 100%;
+ }
+.about{
+    display: inline;
+}
+/*将轮播图中除首张图外都设置为none，导致其不可见，通过改变每张图的display属性来改变显示的图片*/
+.se{
+    display: none;
+}
+.pic{
+    float: left;
+    width: 100%;
+}
+.buttom{
+    clear: both;
+    height: auto;
+    width: 100%;
+}
+
+.buttom p{
+    text-align: center;
+}
+.buttom a{
+    color: #ffffff;
+    font-weight: normal;
+}
+.buttom a:hover{
+    color: #88ffbf;
+}
+.te{
+    float: left;
+    margin-left: 40px;
+}
+.dis_pic{
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+}
+.dis_pic:hover{
+    transform: rotate3d(0,90,0,90deg);
+}
