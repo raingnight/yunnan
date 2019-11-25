@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+#top_info{
+    height: 40px;
+    width: 100%;
+    background: url("../img/ws_a02.gif");
+}
+#top_bjq img{
+    height: 232px;
+    width: 100%;
+    background: url("../img/bjq.jpg");
+}
+#top_menu{
+    width: 100%;
+}
+.menu_op{
+    display: inline-block;
+    height: 32px;
+    width: 116px;
+    margin-right: 2%;
+}
+.menu_op:hover{
+    border-radius: 5%;
+    color: #ffffff;
+}
+.menu_op span{
+    display: inline-block;
+    height: 32px;
+    width:30px;
+    background: url("../img/public_nav_bg.gif")no-repeat;
+    margin-top: 5px;
+}
+.menu_op a{
+    font-family: "Microsoft Yahei";
+    display: inline;
+    height: 32px;
+    position: relative;
+    top: -15px;
+    left: 10px;
+    color: #064394;
+}
+.menu_op:hover a{
+    color: #ffffff;
+    font-family: "Microsoft Yahei";
+}
+#op1{
+    margin-left: 16%;
+}
+#op1 span{
+    background-position: 0px -172px;
+}
+#op2 span{
+    background-position: 0 -103px;
+}
+#op4 span{
+    background-position: 0 -208px;
+}
+#op5 span{
+    background-position: 0 -66px;
+}
+.menu_op:hover{
+    background-color: #064394;
+}
+hr{
+    color: #064394;
+    width:70%;
+    margin-left: 15%;
+}
+
+/*center*/
+#center{
+    width:70%;
+    margin-left: 15%;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-top: none;
+}
+#center_menu{
+    display: inline-block;
+    width: 30%;
+}
+#center_pic{
+    display: inline-block;
+    width: 69%;
+    vertical-align: top;
+}
+#center_title{
+    margin: 5px;
+    height: 24px;
+    text-align: center;
+    color: white;
+    padding: 6px;
+    background-color: #064394;
+}
+ul li{
+    list-style: none;
+    height: 24px;
+    text-align: center;
+    margin: 5px;
+    padding: 6px;
+    background-color: rgba(0,0,0,0.06);
+}
+ul li:hover{
+    background: cornflowerblue;
+    color: white;
+}
+#center_pic_title{
+    height: 24px;
+    margin: 5px;
+    padding: 6px;
+    color: white;
+    background-color: #064394;
+}
+#pic_box{
+
+}
+#pic_box img{
+    display: inline-block;
+    float: left;
+    margin-left: 19px;
+    width: 180px;
+    height: 160px;
+    border: 1px solid rgba(0,0,0,0.19);
+}
+#pic_box p{
+    float: left;
+    margin-bottom: 10px;
+}
+.p1{
+    margin-left: 10%;
+}
+.p2{
+    margin-left: 15%;
+}
+.p3{
+    margin-left: 18%;
+}
+#bottom{
+    border-top: 3px solid #ad2c36;
+    background: #356798;
+}
+#bottom p{
+    text-align: center;
+}
+#bottom a{
+    color:cornflowerblue;
+}
+#bottom a:hover{
+    color: red;
+}
