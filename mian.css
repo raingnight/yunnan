@@ -15,8 +15,8 @@ hr{
     color: white;
 }
 .main{
-    width: auto;
-    height: 100px;
+    /*width: auto;*/
+    /*height: 100px;*/
     border: red;
 }
 video{
@@ -102,12 +102,12 @@ p{
     list-style: none;
 }
 .left ul li{
-    height: 35%;
+    height: 20%;
     background-color: rgba(7,6,6,0.81);
     border-bottom: 1px solid black;
 	border-right: 1px solid black;
     padding-top: 18px;
-    padding-bottom: 12px;
+    /*padding-bottom: 12px;*/
 }
 .left_menu li a{
     color: #ffffff;
@@ -128,7 +128,7 @@ a{
     font-weight: bold;
     font-size: 21px;
     text-align:center;
-    padding: 20px;
+    padding: 10px 0;
     padding-left: 0;
 }
 .info{
@@ -142,12 +142,6 @@ a{
 }
 .info a{
     color: cornflowerblue;
-}
-.right{
-    width: 20%;
-    height: auto;
-    float: left;
-   
 }
 /*中间部分*/
 .center{
@@ -187,7 +181,7 @@ a{
     font-weight: normal;
 }
 .buttom a:hover{
-    color: #88ffbf;
+    color:cornflowerblue;
 }
 .te{
     float: left;

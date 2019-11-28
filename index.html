@@ -1,86 +1,101 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>云南旅游向导</title>
-    <link rel="stylesheet" type="text/css" href="mian.css">
-    <script type="text/javascript" src="loop.js"></script>
+    <meta charset="UTF-8">
+    <title>云南旅游导航</title>
+    <link rel="stylesheet" href="css/head.css">
+
 </head>
 <body>
-<div class="main">
-    <div class="head">
-       <div class="head_menu">
-           <img src="images/icon3.png">
-           <div class="sug">
-               <a onclick="man()" href="#">制作人员<span class="popbox">方祥<br>李春山<br>吴瑞<br>刘仕常</span></a>
-           </div>
-           <a href="#" onclick="tips()">意见反馈</a>
-           <a href="logon.html" >注册</a>
-           <a href="login.html">登录</a>
-       </div>
-        <hr>
-        <div class="head_title">
-            <h1 class="main_title" align="center">梦之彼岸--七彩云南
-                <div class="seach_box">
-                    <input type="text" placeholder=" 请输入搜索内容" class="seach">
-                    <input type="button" value="搜索" class="btn">
-                </div>
-            </h1>
+    <div id="all">
 
+    <div id="head">
+        <a id="icon_a">
+            <img src="images/icon.jpg" id="icon">
+        </a>
 
-        </div>
+        <!--<h1 id="head_title">梦之彼岸&#45;&#45;彩云之南</h1>-->
+        <a class="a1" href="#" target="_parent">注册</a>
+        <a class="a2" href="#" target="_parent">登录</a>
+        <a class="a2" onclick="feedback()">意见反馈</a>
+        <a class="a2" onclick="about()" >关于我们</a>
     </div>
-    <hr>
-    <div class="left">
-        <p class="daohang">景区导航栏</p>
-        <ul class="left_menu">
-            <li><a class="li" href="#" target="_parent"><pre>大    理</pre></a></li>
-            <li><a class="li" href="#" target="_parent"><pre>丽    江</pre></a></li>
-            <li><a class="li" href="#" target="_parent"><pre>曲    靖</pre></a></li>
-            <li><a class="li" href="#" target="_parent"><pre>普    洱</pre></a></li>
-            <li><a class="li" href="wenshan" target="_parent"><pre>文    山</pre></a></li>
-        </ul>
-        <div class="info">
-            <p>
+    <div id="feedback">
+        <form method="post" action="#">
+            <span>意见反馈：</span><br>
+            <textarea type="text" placeholder="请输入您的意见！"></textarea><br>
+            <span>联系方式：</span><br>
+            <input type="text" placeholder="请输入您的联系方式！"><br>
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </form>
+    </div>
+    <div id="center">
+        <div id="left">
+            <h2>景点导航</h2>
+            <ul>
+                <li class="place_name"><a href="#">大&nbsp;&nbsp;&nbsp;&nbsp;理</a></li>
+                <li class="place_name"><a href="#">丽&nbsp;&nbsp;&nbsp;&nbsp;江</a></li>
+                <li class="place_name"><a href="#">曲&nbsp;&nbsp;&nbsp;&nbsp;靖</a></li>
+                <li class="place_name"><a href="#">普&nbsp;&nbsp;&nbsp;&nbsp;洱</a></li>
+                <li class="place_name"><a href="wenshan">文&nbsp;&nbsp;&nbsp;&nbsp;山</a></li>
+            </ul>
+            <p id="intro">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;元狩间，彩云见南中，云南名始此。——《云南通志》<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  在中国的西南部，有一个神秘、神奇、神远的地方，那就是云南。云南在亚洲、在中国，她离我们并不遥远。从香港、韩国、泰国、马来西亚、新加坡、缅甸、老挝、越南、柬埔寨和孟加拉，你都可以直飞云南的省会城市-昆明。
-  云南的地质地貌复杂多样，拥有世界上最具代表的各种地貌特征，平均海拔1500米，东部是噶斯特地貌，北部雪山冰川，西部地热火山，南部热带雨林，中部高原湖泊。多样性的地貌决定了云南多样性的气候，在云南，同一时节可以感受到不同的气候特征。在这里，阳光灿烂，天空纯净，最适宜享受阳光的温暖，感受蓝天白云的休闲。
-  这里是动植物生栖的天堂，良好的生态保护，使云南成为动植物的王国。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  这里生活着26个不同的民族，各民族保持着独特的语言、文字、民族风俗和宗教信仰，形成了文化的多样性。中原文化、异域文化、民族文化、西方文化相互交融，构建出一幅和谐相处的人间风景。
+                在中国的西南部，有一个神秘、神奇、神远的地方，那就是云南。云南在亚洲、在中国，她离我们并不遥远。从香港、韩国、泰国、马来西亚、新加坡、缅甸、老挝、越南、柬埔寨和孟加拉，你都可以直飞云南的省会城市-昆明。
+                云南的地质地貌复杂多样，拥有世界上最具代表的各种地貌特征，平均海拔1500米，东部是噶斯特地貌，北部雪山冰川，西部地热火山，南部热带雨林，中部高原湖泊。多样性的地貌决定了云南多样性的气候，在云南，同一时节可以感受到不同的气候特征。在这里，阳光灿烂，天空纯净，最适宜享受阳光的温暖，感受蓝天白云的休闲。
+                这里是动植物生栖的天堂，良好的生态保护，使云南成为动植物的王国。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                这里生活着26个不同的民族，各民族保持着独特的语言、文字、民族风俗和宗教信仰，形成了文化的多样性。中原文化、异域文化、民族文化、西方文化相互交融，构建出一幅和谐相处的人间风景。
                 <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;让我们一起走进云南，去揭开她神秘的面纱。
             </p>
-        </div>
-        <div class="info">
-            <p>电话咨询:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0871-12345</p>
-            <p>工作时间：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周一至周五8：00—20:00</p>
-            <P>在线客服：<a href="http://wpa.qq.com/msgrd?v=3&uin=3119662020&site=qq&menu=yes">客服一</a></P>
-            <p><a href="http://wpa.qq.com/msgrd?v=3&uin=1784945498&site=qq&menu=yes">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;客服二</a></p>
-        </div>
-    </div>
-    <div class="center">
-        <div class="pic">
-            <a><img src="images/dali.jpg" class="loop_pic"></a>
-            <a><img src="images/lijiang.jpg" class="loop_pic se"></a>
-            <a><img src="images/qujing.jpg" class="loop_pic se"></a>
-            <a><img src="images/puer.jpg" class="loop_pic se"></a>
-            <a><img src="images/wenshan.jpg" class="loop_pic se"></a>
+            <hr>
+            <div class="info">
+                <p>电话咨询:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0871-12345</p>
+                <p>工作时间：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周一至周五8:00—20:00</p>
+                <P>在线客服：<a href="http://wpa.qq.com/msgrd?v=3&uin=3119662020&site=qq&menu=yes">客服一</a></P>
+                <p><a href="http://wpa.qq.com/msgrd?v=3&uin=1784945498&site=qq&menu=yes">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;客服二</a></p>
+            </div>
         </div>
 
-        <div class="trans_pics">
-            <div class="te"><img src="images/pic1.jpg" class="dis_pic"></div>
-            <div class="te"><img src="images/pic2.jpg" class="dis_pic"></div>
-            <div class="te"><img src="images/pic3.jpg" class="dis_pic"></div>
-            <div class="te"><img src="images/pic6.jpg" class="dis_pic"></div>
-        </div>
-        <video src="https://url.cn/5iPfjOJ" controls> 您的浏览器不支持video标签
-        </video>
+        <div id="main">
+           <div class="pic pic1"></div>
+		   <div class="pic pic2"></div>
+		   <div class="pic pic3"></div>
+		   <div class="pic pic4"></div>
+		   <div class="pic pic5"></div>
+            <div id="pic_code">
+                <div id="code1" class="code" onclick="menu()"><p id="tip">折叠</p></div>
+                <a href="#"><div id="code2" class="code me"><p>联系<br>我们</p></div></a>
+                <a href="#"><div id="code3" class="code me"><p>捐赠<br>我们</p></div></a>
+                <a href="#"><div id="code4" class="code me"><p>举报<br>投诉</p></div></a>
+                <a href="#head"><div id="code5" class="code me"><p>回到<br>顶部</p></div></a>
+            </div>
+            <div id="second_content">
+                <div>
+                    <img src="images/second_pic1.jpg">
+                    <p>云南香格里拉</p>
+                </div>
+                <div>
+                    <img src="images/second_pic2.jpg">
+                    <p>云南红河哈尼梯田</p>
+                </div>
+                <div>
+                    <img src="images/second_pic3.jpg">
+                    <p>云南普者黑</p>
+                </div>
+            </div>
+            <div id="video">
+                <video autoplay loop muted playsinline id="myVideo" style="z-index:-1" width="100%" -webkit-playsinline="true"
+                       controls="controls" poster="images/pic3.jpg"
+                       src="https://url.cn/5iPfjOJ"
+                       type="video/mp4">
+                </video>
+            </div>
+		</div>
     </div>
-    <!--<div class="right">-->
-        <!--<p>-->
-            <!--this is a pragraph for explain famous place to visitors-->
-        <!--</p>-->
-    <!--</div>-->
-    <div class="buttom">
+        <br><hr>
+    <div id="foot">
         <p>Design By 稳过不挂组</p>
         <p>友情链接：
             <a href="http://fx7.top" target="_blank">人家故里</a>
@@ -88,6 +103,8 @@
             <a href="http://www.miit.gov.cn/">滇ICP备案号：19010240</a>
         </p>
     </div>
-</div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>

@@ -89,13 +89,23 @@ hr{
     width: 69%;
     vertical-align: top;
 }
-#center_title{
+#center_title,#center_intro{
+    font-weight: bold;
+    font-size: 20px;
     margin: 5px;
     height: 24px;
     text-align: center;
     color: white;
     padding: 6px;
     background-color: #064394;
+}
+#center_intro{
+    margin-top: 40px;
+}
+#center_info{
+    background-color: rgba(0,0,0,0.01);
+    margin: 15px 10px;
+    font-size: 15px;
 }
 ul li{
     list-style: none;
