@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/report.css">
+    <title>用户问卷调查表</title>
+</head>
+<body>
+    <h1>用户问卷调查表</h1>
+    <center>
+    <form method="post" action="add.php" id="report_form">
+        <p>您的姓名？</p>
+        <input type="text" placeholder="请输入您的姓名" required maxlength="4" class="input" name="name">
+        <br><br><hr><br><br>
+        <p>您的邮箱？</p>
+        <input type="email" placeholder="请输入你的邮箱" required maxlength="25" class="input" name="email">
+        <br><br><hr><br><br>
+        <p>您是否有到云南旅游的打算？</p>
+        <input type="radio" value="有" name="plan"checked class="btn_plan"><span>有</span>
+        <input type="radio" value="没有" name="plan" class="btn_plan"><span>没有</span>
+
+        <br><br><hr><br><br>
+        <p>如果到云南旅游，最想去的地方是？</p>
+        <input type="text" placeholder="请输入地名" required name="place" maxlength="6" class="input">
+        <br><br><hr><br><br>
+        <p>你了解过的云南景点有？</p><br>
+        <input type="checkbox" value="大理"  name="checkbox[]"><span>大理</span>
+        <input type="checkbox" value="丽江"  name="checkbox[]"><span>丽江</span>
+        <input type="checkbox" value="昆明"  name="checkbox[]"><span>昆明</span><br><br>
+        <input type="checkbox" value="曲靖"  name="checkbox[]"><span>曲靖</span>
+        <input type="checkbox" value="普洱"  name="checkbox[]"><span>普洱</span>
+        <input type="checkbox" value="红河"  name="checkbox[]"><span>红河</span>
+        <br><br><hr><br><br>
+        <div>
+        <input type="submit" value="提交问卷" class="btn btn1">
+        <pre>          </pre>
+        <input type="reset" value="重置" class="btn btn2">
+        </div>
+    </form>
+    </center>
+</body>
+<html>

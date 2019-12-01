@@ -9,15 +9,15 @@ function LoopPic(){
 	index++;
 	num++;
 	var a = document.getElementsByClassName('pic');
-	var  b =document.getElementsByClassName('place_name')
+	var  b =document.getElementsByClassName('place')
 	if(index>=a.length) index=0;
 	if (num>=b.length) num=0;
 	for(var i=0;i<a.length;i++){
 		a[i].style.display="none";
-		b[i].style.color='black';
+		b[i].style.color='white';
 	}
 	a[index].style.display='block';
-	b[num].style.color='white';
+	b[num].style.color='black';
 }
 
 setInterval(LoopPic,3000);

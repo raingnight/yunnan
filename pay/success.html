@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>捐赠成功通知！</title>
+</head>
+<body>
+    <h1 align="center" style="margin-top: 200px">捐赠成功！感谢您的支持！<br><span id="s"></span></h1>
+
+    <script type="text/javascript">
+        var s = document.getElementById('s');
+        var time = 8; //时间,秒            　　　　　　　　
+        function Redirect() {
+            window.location = "http://www.fx7.top/yunnan/";
+        }
+        var i = 0;
+        function dis() {
+            s.innerHTML = "还剩" + (time - i) + "秒跳转主页";
+            i++;
+        }
+        timer = setInterval('dis()', 1000); //显示时间            　　　　　　　　
+        timer = setTimeout('Redirect()', time * 1000); //跳转
+    </script>
+</body>
+</html>

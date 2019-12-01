@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /*background: url("../images/pic5.jpg");*/
+    /*background-size: cover;*/
+    /*background-attachment:fixed;*/
+    background-color: #fffed8;
+}
+h1{
+    text-align: center;
+    margin: 50px;
+}
+#report_form{
+    text-align: left;
+    padding-left: 15%;
+    width: 40%;
+    border: 1px solid  #fffed8;
+}
+#report_form div{
+    display: flex;
+}
+#report_form .input{
+    width: 50%;
+    height: 30px;
+    border: 1px solid  #fffed8;
+    background-color:  #fffed8;
+    margin-top: 20px;
+}
+#report_form hr{
+    width: 50%;
+}
+#report_form textarea{
+    width: 60%;
+    height:100px;
+}
+#report_form .btn{
+    width: 150px;
+    border:3px solid black;
+    font-weight: bold;
+    font-size: 18px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#btn2{
+    margin: 60px;
+    height: 75px;
+}
+.btn_plan{
+    margin-top: 30px;
+    margin-left: 20px;
+}
