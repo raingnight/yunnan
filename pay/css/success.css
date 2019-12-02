@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url("../images/suc1.jpg");
+}
+span,h1{
+    color: cyan;
+}
+h1{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 50px;
+}
+span{
+    font-size: 40px;
+}

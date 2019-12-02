@@ -1,6 +1,6 @@
 
 <?php
-	
+header('Content-type="text/html";charset="UTF8"');
 $name=$_POST['name'];
 $email=$_POST['email'];
 $plan=$_POST['plan'];
@@ -18,11 +18,12 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
- $check= implode(',',$checkbox);
+mysqli_query($conn,"set names 'utf8'");
+$check= implode(',',$checkbox);
 $sql="insert into info values('$name','$email','$plan','$place','$check',now())";
  //$sql="insert into test values ('test') ";
 if (mysqli_query($conn, $sql)) {
-    echo "<script>alert('问卷提交成功！即将跳转主页！');location='';</script>";
+    echo "<script>alert('问卷提交成功！即将跳转主页！');location='../';</script>";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }

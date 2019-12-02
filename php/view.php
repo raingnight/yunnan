@@ -10,7 +10,7 @@ $result1=mysql_query($sql);
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <style>
 body{
-	background:url("image/bg2.jpg");
+	background:url("../images/view.jpg");
 }
 table{
 	text-align:center;

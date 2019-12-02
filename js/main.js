@@ -9,7 +9,7 @@ function LoopPic(){
 	index++;
 	num++;
 	var a = document.getElementsByClassName('pic');
-	var  b =document.getElementsByClassName('place')
+	var b =document.getElementsByClassName('place')
 	if(index>=a.length) index=0;
 	if (num>=b.length) num=0;
 	for(var i=0;i<a.length;i++){
